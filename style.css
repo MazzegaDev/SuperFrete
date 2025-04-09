@@ -1,0 +1,112 @@
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#listaMetas {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+#listaMetas li {
+  background-color: #f4f4f4;
+  border-left: 5px solid #ccc;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+}
+
+/* Estilização visual por emoji (meta) */
+#listaMetas li:has(🌟) {
+  border-left-color: #4caf50;
+}
+
+#listaMetas li:has(✅) {
+  border-left-color: #2196f3;
+}
+
+#listaMetas li:has(😴) {
+  border-left-color: #f44336;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    margin: 20px 10px;
+    padding: 15px;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  input, button {
+    font-size: 0.95rem;
+  }
+}
