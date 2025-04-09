@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fcb;
+}
+
+/* Área da tabela */
+#tabelaFretes {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+#tabelaFretes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Estilo da tabela */
+#tabelaFretes table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tabelaFretes th,
+#tabelaFretes td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+#tabelaFretes th {
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#tabelaFretes td {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+#tabelaFretes tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabelaFretes tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* RESPONSIVIDADE EXTRA para telas menores que 480px */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    form, #tabelaFretes {
+        padding: 15px;
+    }
+
+    label, input, button {
+        font-size: 0.95rem;
+    }
+
+    #tabelaFretes table {
+        min-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    #tabelaFretes th, #tabelaFretes td {
+        padding: 10px;
+    }
+
+    #tabelaFretes h2 {
+        font-size: 1rem;
+    }
+}
+
+#freteTable {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#freteTable th,
+#freteTable td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+#freteTable th {
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+}
+
+#freteTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#freteTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilização da coluna dos checkboxes */
+.checkbox-col {
+    width: 50px;
+    text-align: center;
+}
+
+.checkbox-col input[type="checkbox"] {
+    transform: scale(1.2); /* deixa o checkbox maiorzinho */
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .checkbox-col {
+        width: 40px;
+    }
+
+    .checkbox-col input[type="checkbox"] {
+        transform: scale(1);
+    }
+}
